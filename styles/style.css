@@ -13,6 +13,8 @@
 /* header */
 header {
     background-color: rgba(255, 144, 14, 0.10);
+    padding: 10px 200px;
+
 }
 
 nav {
@@ -20,11 +22,12 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 240px;
+    /* padding: 20px 240px; */
 }
 
 .nav-title {
     font-size: 2.8rem;
+    font-weight: 700;
 }
 
 nav>ul {
@@ -48,10 +51,11 @@ nav li a {
 .banner {
     text-align: center;
 
+
 }
 
 .banner-content {
-    margin: 0px 560px 0px 560px;
+    margin: 0px 200px;
 }
 
 .banner-title {
@@ -59,7 +63,8 @@ nav li a {
     color: #131313;
 }
 
-.banner-paragraph {
+.banner-paragraph,
+.gray-color {
     font-size: 1rem;
     color: #727272;
 }
@@ -78,42 +83,6 @@ nav li a {
 
 .banner-image {}
 
-/* response media quary */
-/* mobile devices */
-@media screen and (max-width: 576px) {
-    .banner-content {
-        margin: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .banner-image {
-        width: 90%;
-        margin: 10px;
-
-    }
-
-}
-
-/* response media quary */
-/* medium devices */
-@media screen and (min-width:577px) and (max-width:992px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .banner-content {
-        margin: 10px;
-    }
-
-    .banner-image {
-        width: 90%;
-        margin: 10px;
-
-    }
-}
 
 /* main style */
 main {
@@ -156,4 +125,86 @@ main {
 
 .team-description {
     color: #727272;
+}
+
+/* fact container */
+
+.fact-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 124px;
+
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+    text-align: center;
+}
+
+.fact-card-container .card-states {
+    color: #424242;
+    font-size: 2.8rem;
+    padding-top: 0;
+    margin: 10px 0px 5px 0px;
+
+}
+
+.fact-card-container .card-title {
+    color: #727272;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+
+
+
+/* response media quary */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .banner-content {
+        margin: 10px;
+    }
+
+    nav,
+    .team-continer {
+        flex-direction: column;
+    }
+
+    .banner-image {
+        width: 90%;
+        margin: 10px;
+
+    }
+
+    .team-image-container {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+
+}
+
+/* response media quary */
+/* medium devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    nav,
+    .team-continer {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        margin: 10px;
+    }
+
+    .banner-image {
+        width: 90%;
+        margin: 10px;
+
+    }
 }
